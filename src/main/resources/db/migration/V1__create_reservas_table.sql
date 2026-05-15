@@ -1,0 +1,7 @@
+CREATE TABLE reservas (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id BIGINT NOT NULL,
+    libro_id BIGINT NOT NULL,
+    fecha_reserva DATE NOT NULL,
+    estado VARCHAR(20) NOT NULL -- Ej: 'PENDIENTE', 'COMPLETADA', 'CANCELADA'
+);
